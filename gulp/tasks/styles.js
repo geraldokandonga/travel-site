@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
 	postcss = require('gulp-postcss'),
 	autoPrefixer = require('autoprefixer'),
 	cssvars = require('postcss-simple-vars'),
