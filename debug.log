@@ -7,4 +7,8 @@
 [0608/121957.785:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0608/143934.206:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0608/233305.721:ERROR:crash_report_database_win.cc(428)] unexpected header
+<<<<<<< HEAD
 [0609/152300.864:ERROR:crash_report_database_win.cc(428)] unexpected header
+=======
+[0609/125248.688:ERROR:crash_report_database_win.cc(428)] unexpected header
+>>>>>>> testimonials
