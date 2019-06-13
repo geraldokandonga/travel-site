@@ -11,16 +11,24 @@ gulp.task('watch', () => {
   	}
   });
 
-  gulp.watch('./app/index.html', ()=>{
+  watch('./app/index.html', ()=>{
   	 browserSync.reload();
   });
   
-  gulp.watch('./app/assets/styles/**/*.css')
+  watch('./app/assets/styles/**/*.css')
    .on('change', gulp.series('cssInject'));
 
+  watch('./app/assets/scripts/**/*.js')
+   .on('change', gulp.series('scriptsRefresh'));
+
 });
+
 
 gulp.task('cssInject', gulp.series('styles'), ()=> {
 	return gulp.src('./app/temp/styles/styles.css')
 	.pipe(browserSync.stream());
+});
+
+gulp.task('scriptsRefresh', gulp.series('scripts'), ()=> {
+  browserSync.reload();
 });
