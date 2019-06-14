@@ -43,3 +43,4 @@ function endClean () {
 }
 
 gulp.task('icons', gulp.series(beginClean, gulp.parallel(createSprite, copySpriteGraphic, copySpriteCSS, endClean)));
+
